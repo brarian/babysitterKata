@@ -1,0 +1,15 @@
+{
+  "name": "babysitterkata",
+  "version": "1.0.0",
+  "description": "Accenture Babysitter Kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Brarian Namonywa",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
