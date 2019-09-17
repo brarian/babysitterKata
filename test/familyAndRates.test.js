@@ -19,4 +19,15 @@ describe('Family and rates', () => {
     expect(totalHoursWorked(main.B)).to.equal(11);
     expect(totalHoursWorked(main.C)).to.equal(11);
   });
+
+  //the babysitter needs to be paid for every hour they work
+  it('should check that the babysitter is getting paid every hour', () => {
+    //check to ensure there is no rate that is 0 or lower for the hours worked
+    // test should fail if there is a rate of 0 for period of time the babysitter gets paid
+    const paidEveryHour = family =>
+      Object.keys(family).filter(i => family[i] <= 0 || null).length;
+    expect(paidEveryHour(main.A)).to.equal(0);
+    expect(paidEveryHour(main.B)).to.equal(0);
+    expect(paidEveryHour(main.C)).to.equal(0);
+  });
 });
