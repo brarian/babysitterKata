@@ -7,9 +7,9 @@ const main = require('../index');
 describe('The main function to calculate nightly rates', () => {
   //using array because we'll easily be able to loop through them and return key*value
   it('should return a number greater than 0', () => {
-    let testArr = { 1: 15, 6: 10, 4: 20 };
-
-    expect(main.function()).to.be.greaterThan(0);
-    expect(main.function()).to.be.an('number');
+    let testArray = { 1: 15, 6: 10, 4: 20 };
+    let testArrayResult = main.nightlyRate(testArray);
+    expect(testArrayResult).to.be.greaterThan(0);
+    expect(testArrayResult).to.be.an('number');
   });
 });
