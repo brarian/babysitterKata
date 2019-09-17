@@ -5,11 +5,17 @@ const main = require('../index');
 // 1. needs to equal 11 hours, the total num the babysitter works for every family
 // 2. check that the babysitter gets paid for every hours they work
 // 3. check that there are no fractional hours
-// 4. check that the structre being passed in is an object
+// 4. check that the structure being passed in is an object
 
 describe('Family and rates', () => {
+  //I go about this problem presuming that an object will always be passed in to represent the pay structure
+  it('should return a typeof "object" for every const passed in', () => {
+    let dataype = typeof main.A;
+    expect(dataype).to.equal('object');
+  });
+
   //the babysitter can work no more than 11 hours 5pm - 4am
-  it('family and rate objects {A, B, C} should all have keys that summed equal 11', () => {
+  it('family and rate objects {A, B, C} should all have keys whose sum is equal to 11', () => {
     const totalHoursWorked = hours =>
       Object.keys(hours)
         .map(i => Number(i))
