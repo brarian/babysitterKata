@@ -27,4 +27,5 @@ function hPayingFam(arrOfPrices) {
   let highestPayingFamily = Object.keys(map).find(key => map[key] === max);
   return highestPayingFamily;
 }
+
 console.log(hPayingFam(familyAndPriceArray));

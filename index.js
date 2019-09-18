@@ -21,10 +21,7 @@ function nightlyRate(obj) {
   return sum;
 }
 
-console.log(nightlyRate(A));
-console.log(nightlyRate(B));
-
-console.log(nightlyRate(C));
+console.log(nightlyRate());
 
 module.exports = {
   A,
