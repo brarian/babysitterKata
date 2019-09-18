@@ -12,7 +12,7 @@ Clone the repository locally and install the dependencies
 
 ### Usage
 
-To view the nightly rate of a family pass A, B, or C to console.log(nightlyRate()) on line 24 of index.js run
+To view the nightly rate of a family pass A, B, or C to console.log(nightlyRate()) on line 24 of index.js run:
 
 \$ npm node index.js
 
@@ -25,8 +25,8 @@ An additional function to calculate what the highest paying family is found in h
 
 ### Tests
 
-All tests are defined in the \test folder
-To run the tests
+All tests are defined in the \test folder.
+To run the tests:
 
 \$ npm test
 
